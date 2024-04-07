@@ -1,4 +1,4 @@
-/* Tạo Base */
+/* ===================================================================Tạo Base */
 * {
   box-sizing: border-box;
 }
@@ -17,7 +17,7 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-/* Thuộc tính chung */
+/* ============================================================Thuộc tính chung */
 a {
   text-decoration: none;
 }
@@ -39,17 +39,42 @@ a {
   font-weight: 600;
   background: #171100;
   border-radius: 999px;
+  cursor: pointer;
 }
 
 .btn:hover {
   opacity: 0.9;
 }
-/* Phần Header */
+
+.heading-lv2 {
+  color: #171100;
+  font-family: var(--font-heading);
+  font-size: 3.8rem;
+  font-weight: 700;
+  line-height: 1.26;
+  letter-spacing: -0.76px;
+}
+
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp, 1);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp.line-2 {
+  --line-clamp: 2;
+}
+
+.break-all {
+  word-break: break-all;
+}
+/* ================================================================Phần Header */
 .header {
   background: #fffcf4;
 }
 
-.header.fixed {
+.fixed {
   z-index: 1;
   position: sticky;
   top: -28px;
@@ -102,7 +127,7 @@ a {
   border-radius: 24.5px;
   background: #171100;
 }
-/* Phần HERO */
+/* =================================================================Phần HERO */
 .hero {
   padding: 56px 0 64px;
   background: #fffcf4;
@@ -271,4 +296,133 @@ a {
 
 .hero .desc2 strong:nth-child(2) {
   margin-left: 28px;
+}
+/*============================================================ Phần Popular */
+.popular {
+  padding: 65px 0px;
+  margin-top: 135px;
+}
+
+.popular-top .desc {
+  margin-top: 16px;
+  width: 458px;
+  color: #5f5b53;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.66;
+}
+
+.popular-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.popular-top .control-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.popular-top .control {
+  display: flex;
+  gap: 18px;
+}
+
+.popular-top .control-btn:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+  cursor: pointer;
+}
+
+.popular .popular-bot {
+  gap: 30px;
+  margin-top: 55px;
+  display: flex;
+}
+
+.popular-bot .thumb {
+  border-radius: 12px 12px 0px 0px;
+  object-fit: cover;
+  height: 278px;
+  width: 100%;
+}
+
+.popular-bot .item {
+  border-radius: 12px;
+  border: 1px solid #e2dfda;
+  background: #fff;
+  width: 370px;
+  height: 466px;
+}
+
+.popular-bot .item:hover {
+  border: 1px solid transparent;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0px 18px 36px 0px rgba(0, 0, 0, 0.05);
+}
+
+.popular-bot .info {
+  padding: 16px 22px 22px;
+}
+.popular-bot .info .foot,
+.popular-bot .info .rating,
+.popular-bot .info .head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.popular-bot .info .title a {
+  color: #171100;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.66;
+}
+
+.popular-bot .info .value {
+  color: #fea31b;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.75;
+  margin-left: 6px;
+}
+
+.popular-bot .info .desc {
+  width: 326px;
+  color: #5f5b53;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.85;
+  margin-top: 6px;
+}
+
+.popular-bot .info .btn-book {
+  margin-top: 12px;
+  width: 118px;
+  height: 50px;
+  border-radius: 25px;
+  color: #fff;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.85;
+}
+
+.popular-bot .info .btn-book:hover {
+  border: none;
+  background-color: var(--primary-color);
+}
+
+.popular-bot .info .price {
+  color: #171100;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.66;
 }
