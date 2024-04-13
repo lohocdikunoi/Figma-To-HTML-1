@@ -579,3 +579,125 @@ a {
 .features-2nd .desc {
   width: 570px;
 }
+
+/*============================================================== Phần Blog */
+.blog {
+  margin-top: 135px;
+  padding: 96px 0px;
+  background: #fffcf4;
+}
+
+.blog .blog-top {
+  text-align: center;
+}
+
+.blog .blog-top .desc {
+  margin: 16px auto 55px;
+  width: 448px;
+  color: #696262;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.75;
+}
+
+.blog .blog-list {
+  gap: 30px;
+  display: flex;
+  /* overflow: hidden; */
+}
+
+.blog .blog-list .blog-items {
+  border-radius: 16px;
+  background: #fff;
+  width: calc(33.33% - 20px);
+  flex-shrink: 0;
+}
+
+.blog .blog-list .thumb {
+  object-fit: cover;
+  border-radius: 16px 16px 0px 0px;
+  height: 250px;
+  width: 100%;
+}
+
+.blog .blog-items {
+  border-radius: 16px;
+  background: #fff;
+}
+
+.blog .blog-items:hover {
+  box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
+}
+
+.blog .blog-items .info {
+  padding: 20px 20px 28px;
+}
+
+.blog .blog-items .date {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  color: #5f5b53;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.85;
+  padding-bottom: 12px;
+}
+
+.blog .blog-items .date::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  margin-right: 4px;
+}
+
+.blog .blog-items .date::after {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  right: -27px;
+  height: 1px;
+  border-radius: 0.5px;
+  background: #e2dfda;
+  left: 0;
+  bottom: 0;
+}
+
+.blog .blog-items .title {
+  color: #171100;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.75;
+  padding: 12px 0px;
+}
+
+.blog .blog-items .btn {
+  font-size: 1.4rem;
+}
+
+.blog .blog-items .btn:hover {
+  background-color: var(--primary-color);
+}
+
+.blog .dots {
+  display: flex;
+  gap: 6px;
+  margin-top: 38px;
+  justify-content: center;
+}
+
+.blog .dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #5f5b53;
+  cursor: pointer;
+}
+
+.blog .dot.active {
+  background: var(--primary-color);
+  cursor: default;
+}
